@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="A research-led catalog of practical thesis directions in embedded AI, microcontrollers, edge computing, and connected sensing, with IEEE references.">
+  <title>Fieldnotes — Embedded Systems Thesis Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Fieldnotes home"><span class="brand-mark">f.</span><span>fieldnotes<span class="brand-dot">/</span>lab</span></a>
+    <nav aria-label="Main navigation"><a href="#catalog">Catalog</a><a href="#method">How to use</a></nav>
+    <a class="top-cta" href="#catalog">Explore ideas <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> RESEARCH STARTS HERE <span class="eyebrow-line"></span> VOL. 01</p>
+        <h1>Build what<br>the edge <em>is missing.</em></h1>
+        <p class="hero-intro">A field guide to thesis ideas in embedded AI, microcontrollers, and connected systems. Start with a real limitation. Make a measurable improvement.</p>
+        <a class="hero-link" href="#catalog">Find your direction <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a connected embedded device">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-chip"><div class="chip-head"><span>FIELD DEVICE</span><span class="chip-led"></span></div><div class="chip-eye"><i></i><i></i></div><div class="chip-readout">EDGE AI <b>● ON</b></div><div class="chip-pins"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="orbit-label label-top"><span>01</span> SENSE</div><div class="orbit-label label-right"><span>02</span> INFER</div><div class="orbit-label label-bottom"><span>03</span> IMPROVE</div>
+        <span class="art-cross cross-a">+</span><span class="art-cross cross-b">+</span><span class="art-coord">14°35' N<br>121°02' E</span>
+      </div>
+      <div class="hero-meta"><span>IDEAS BUILT FOR REAL-WORLD CONSTRAINTS</span><span>MICROCONTROLLERS · EDGE AI · IOT</span></div>
+    </section>
+
+    <section class="proof-strip" aria-label="Catalog facts">
+      <div><strong id="idea-count">—</strong><span>research directions</span></div><div><strong>IEEE</strong><span>source-first references</span></div><div><strong>01→∞</strong><span>your next prototype</span></div>
+      <p>From Raspberry Pi to ESP32, Jetson, and beyond.</p>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="section-heading"><div><p class="eyebrow">THE IDEA INDEX <span class="eyebrow-line"></span> 001—∞</p><h2>Pick a problem.<br><em>Make it better.</em></h2></div><p class="section-note">Every direction opens into a buildable concept, a research gap to test, and IEEE papers to start your review of related literature.</p></div>
+      <div class="toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search ideas, hardware, or problems…" autocomplete="off"><kbd>/</kbd></label><div class="filter-wrap"><label for="category-filter" class="sr-only">Filter by category</label><select id="category-filter"><option value="all">All fields</option></select></div><span class="result-count" id="result-count"></span></div>
+      <div class="active-filters" id="active-filters" hidden></div>
+      <div class="idea-grid" id="idea-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>No field notes found.</h3><p>Try a different keyword or clear the filters.</p><button id="clear-filters">Clear filters</button></div>
+      <div class="catalog-footer"><span>END OF CURRENT INDEX</span><span>THE BEST IDEAS START WITH A BETTER QUESTION <b>↗</b></span></div>
+    </section>
+
+    <section class="method" id="method"><div class="method-no">FIELD GUIDE / 01</div><div><p class="eyebrow">BEFORE YOU BUILD <span class="eyebrow-line"></span></p><h2>An idea is a<br><em>starting point.</em></h2></div><div class="method-copy"><p>These are research directions, not claims of proven novelty. A paper can support a method or problem area without studying the exact proposed system.</p><ol><li><b>01</b><span>Read the cited papers and follow their references.</span></li><li><b>02</b><span>Check IEEE Xplore for newer work, especially papers from the last 3–5 years.</span></li><li><b>03</b><span>Turn a limitation into a measurable research question.</span></li><li><b>04</b><span>Validate novelty with your adviser before committing.</span></li></ol></div></section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">f.</span><span>fieldnotes<span class="brand-dot">/</span>lab</span></a><span>AN OPEN NOTEBOOK FOR BETTER SYSTEMS.</span><a href="#catalog">Back to index ↑</a></footer>
+
+  <dialog id="idea-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close idea details">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
