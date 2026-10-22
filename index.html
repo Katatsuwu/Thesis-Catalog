@@ -37,13 +37,14 @@
     </section>
 
     <section class="proof-strip" aria-label="Catalog facts">
-      <div><strong id="idea-count">—</strong><span>research directions</span></div><div><strong>IEEE</strong><span>source-first references</span></div><div><strong>01→∞</strong><span>your next prototype</span></div>
+      <div><strong id="active-count">150</strong><span id="active-count-label">thesis ideas</span></div><div><strong>IEEE</strong><span>source-first references</span></div><div><strong>01→∞</strong><span>your next prototype</span></div>
       <p>From Raspberry Pi to ESP32, Jetson, and beyond.</p>
     </section>
 
     <section class="catalog" id="catalog">
-      <div class="section-heading"><div><p class="eyebrow">THE IDEA INDEX <span class="eyebrow-line"></span> 001—∞</p><h2>Pick a problem.<br><em>Make it better.</em></h2></div><p class="section-note">Every direction opens into a buildable concept, a research gap to test, and IEEE papers to start your review of related literature.</p></div>
-      <div class="toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search ideas, hardware, or problems…" autocomplete="off"><kbd>/</kbd></label><div class="filter-wrap"><label for="category-filter" class="sr-only">Filter by category</label><select id="category-filter"><option value="all">All fields</option></select></div><span class="result-count" id="result-count"></span></div>
+      <div class="section-heading"><div><p class="eyebrow">THE RESEARCH INDEX <span class="eyebrow-line"></span> 001—∞</p><h2>Find a problem.<br><em>Shape a solution.</em></h2></div><p class="section-note">Browse complete thesis directions or start from a real-world problem. Each entry includes an IEEE reading trail and a research question to investigate.</p></div>
+      <div class="catalog-tabs" role="tablist" aria-label="Catalog type"><button class="catalog-tab active" id="tab-ideas" role="tab" aria-selected="true" aria-controls="idea-grid" data-tab="ideas">IDEAS <span id="ideas-tab-count">150</span></button><button class="catalog-tab" id="tab-problems" role="tab" aria-selected="false" aria-controls="idea-grid" data-tab="problems">PROBLEMS <span id="problems-tab-count">00</span></button></div>
+      <div class="toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search ideas, hardware, or problems…" autocomplete="off"><kbd>/</kbd></label><div class="filter-wrap"><label for="category-filter" class="sr-only">Filter by field</label><select id="category-filter"><option value="all">All fields</option></select></div><span class="result-count" id="result-count"></span></div>
       <div class="active-filters" id="active-filters" hidden></div>
       <div class="idea-grid" id="idea-grid" aria-live="polite"></div>
       <div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>No field notes found.</h3><p>Try a different keyword or clear the filters.</p><button id="clear-filters">Clear filters</button></div>
