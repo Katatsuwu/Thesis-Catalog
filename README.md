@@ -14,4 +14,4 @@ Open `http://localhost:8000`. Search ideas, filter by field, and select a card t
 
 ## Research note
 
-The catalog contains research directions. The papers are IEEE starting points for methods and problem areas, not proof that the exact proposed combination is novel. They link through their DOI. Review the papers, search IEEE Xplore for recent work, confirm access and metadata, and validate the research gap with an adviser before selecting a topic.
+The catalog contains 150 research directions. The papers are IEEE starting points for methods and problem areas, not proof that the exact proposed combination is novel. They link through their DOI. Review the papers, search IEEE Xplore for recent work, confirm access and metadata, and validate the research gap with an adviser before selecting a topic.
